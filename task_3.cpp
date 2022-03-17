@@ -24,15 +24,17 @@ int pr(vector<int>& m) {
 }
 
 int main() {
-    vector<int> r = {1,2,3};
-    vector<int> m = {13,17,19};
+    vector<int> r = {4,1, 1,0};
+    vector<int> m = {5,3,4,7};
     int ma = pr(m);
-
+    cout << "M: " << ma << endl;
     int res = 0;
 
     for(int i = 0; i < r.size(); i++) {
         int M = up(ma, m[i]);
-        res += (r[i]*M*reverse(M, m[i]))%ma;
+        int M_re = reverse(M, m[i]);
+        cout << "Mi: " << M << " M'i: " << M_re << endl;
+        res += (r[i]*M*M_re)%ma;
     }   
 
     cout << res;

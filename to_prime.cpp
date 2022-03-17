@@ -48,7 +48,7 @@ vector<vector<int> > devi(int a) {
 }
 
 int main() {
-    vector<vector<int> > mas = devi(1798);
+    vector<vector<int> > mas = devi(2271);
     for(int i = 0; i < mas.size(); i++) {
         cout << mas[i][0] << " : " << mas[i][1] << endl;
     }
