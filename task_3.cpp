@@ -24,8 +24,8 @@ int pr(vector<int>& m) {
 }
 
 int main() {
-    vector<int> r = {4,1, 1,0};
-    vector<int> m = {5,3,4,7};
+    vector<int> r = {10, 17, 11};
+    vector<int> m = {63, 47, 40};
     int ma = pr(m);
     cout << "M: " << ma << endl;
     int res = 0;

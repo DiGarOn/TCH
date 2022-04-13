@@ -125,9 +125,9 @@ int main() {
     //     cout << mas[i][0] << " : " << mas[i][1] << endl; 
     // }
     
-    cout << a_2(3);
+    //cout << a_2(3);
 
-    //cout << swap(3, 5);
+    cout << swap(19, 541);
 
     return 0;
 }
